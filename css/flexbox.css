@@ -1,0 +1,46 @@
+.flex-item {
+    width: 20px;
+    height: auto;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.911);
+    justify-content: center;
+    /* justify-content는 정렬 느낌 */
+    flex-direction: row;
+    /* display-flex 배치를 바꿔줌 */
+    /* flex-wrap: wrap; width-가 꽉 차면 알아서 냐려줌. */
+    align-items: center;
+}
+
+.text-align-left {
+    text-align: left;
+
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.color-size {
+    color: white;
+    font-size: 40px;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.color-big {
+    color: white;
+    font-size: 50px;
+}
+.test {
+    width: 100vw;
+    height: 5rem;
+    background-color: grey;
+}

@@ -1,0 +1,32 @@
+.no-decoration {
+  text-decoration: none;
+}
+.button-size {
+    width: 8rem;
+    height: 2.5rem;
+}
+.bc-sky-blue{
+    background-color: #6fbaf8 !important;
+}
+.c-sky-blue{
+    color: #6fbaf8 !important;
+}
+.border-bottom-sky-blue{
+    border-bottom: 2px solid #6fbaf8 !important;
+}
+.fw-500 {
+    font-weight: 500 !important;
+}
+.fs-5rem {
+    font-size: 5rem !important;
+}
+.c-white {
+    color: white !important;
+}
+.border-bottom-gray{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.317) !important;
+}
+.niggers {
+    color : red;
+    background-color: black;
+}

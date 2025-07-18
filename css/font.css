@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'nsR';
+    font-weight: 1000;
+    src : url(../fonts/NanumSquareB.woff)
+}
+@font-face {
+    font-family: 'nsR';
+    src: url(../fonts/NanumSquareR.woff); 
+}
+
+div,input,textarea {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'nsR';
+}
+/* Make fonts clear (Anti-aliasing bug) */
+p,h1,h2,h3,h4,h5,h6,span {
+    transform: rotate(0.01deg);
+}
+table {
+    border-collapse: collapse;
+}

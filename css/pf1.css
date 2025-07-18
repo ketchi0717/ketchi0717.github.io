@@ -1,0 +1,223 @@
+.container {
+    background: #006aff;
+    background: linear-gradient(180deg, rgba(74, 149, 255, 1) 0%, rgba(94, 79, 255, 1) 100%);
+    width: 100%;
+    height: 115vh;
+}
+.upper-text-container {
+    width: max-content;
+    height: max-content;
+    position: relative;
+    left: 10%;
+    top: 10%;
+    color: #fff;
+    float: left;
+    z-index: 1;
+    text-align: left;
+    transition-duration: 1s;
+}
+.upper-image-container {
+    width: 30%;
+    height: 30%;
+    position: relative;
+    left: 70%;
+    transition-duration: 500ms;
+}
+.upper-image-container img {
+    width: 400px;
+    display :block;
+}
+.middle-bar {
+    width: 100%;
+    height: 20%;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 59%;
+    padding: 2vh;
+}
+.bottom-container {
+    width: 100%;
+    height: 61vh;
+    text-align: center;
+    position: absolute;
+    top: 79%;
+    padding-top: 30px;
+}
+.bottom-text{
+    color: white;
+    margin: 10px;
+}
+.bottom-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 80%;
+    height: 40%;
+    margin: auto;
+}
+.items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 25%;
+}
+.icon {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000000000px;
+    margin-bottom: 2vh;
+}
+.black-button {
+    width: 15vh;
+    height: 5vh;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    color: white;
+    font-size: large;
+    transition-duration: 250ms;
+}
+.black-button:hover {
+    background-color: cornflowerblue;
+}
+.black-button:focus {
+    background-color: rgb(35, 62, 113);
+}
+.white {
+    color: rgb(255, 255, 255);
+}
+.bold {
+    font-weight: 1000;
+}
+.ic {
+    font-size: 38px;
+    color: #5757ff;
+}
+.footer {
+    width: 100%;
+    height: 1200px;
+    background-color: #ffffff;
+}
+.upper-footer {
+    width: 100%;
+    height: 10%;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 30px;
+}
+.middle-footer {
+    width: 80%;
+    height: 50%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 500ms;
+}
+.image-footer {
+    width: 50%;
+    padding: 10px;
+    color: white;
+    transition-duration: 500ms;
+}
+.img1 {
+    background-image: url(/images/pf1/portfolio-1-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img2 {
+    background-image: url(/images/pf1/portfolio-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img3 {
+    background-image: url(/images/pf1/portfolio-3-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img4 {
+    background-image: url(/images/pf1/portfolio-4-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bottom-footer {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color:white;
+}
+a:visited {
+    color:white;
+}
+a:hover {
+    color:white;
+}
+a:active {
+    color:white;
+}
+.bgw {
+    background-color: #5757ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 75px;
+    height: 75px;
+}
+.icw {
+    color: white;
+    font-size: 32px;
+}
+.middle-footer>div:hover {
+    border: 100px solid white;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .image-footer{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .upper-image-container {
+    width: 30%;
+    height: 30%;
+    position: relative;
+    left: 10%;
+    float: left;
+}
+    .image-footer{
+        width: 100%;
+    }
+    .upper-text-container{
+        text-align: center;
+    }
+    .items{ 
+        width: 50%;
+    }
+}

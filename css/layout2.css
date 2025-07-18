@@ -1,0 +1,185 @@
+ div {
+    box-sizing:  border-box;
+}
+body {
+    margin: 0px;
+}
+ .main_background {
+    width : 100%;
+    height: 500px;
+    background-image: url(../images/shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px; 
+    filter: brightness(0.9) ccontrast(1.2);
+    position : relative;
+    z-index: 1
+    /* to fix margin collapse bug gotta add padding to the mother box */
+}
+ .main_title {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    margin-top: 75px;
+    text-align: center;
+ }
+ .description {
+    color: white;
+    font-size: 30px;
+    margin-top: 100px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ .button { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 40px;
+    font-size: auto;
+    font-weight: 700;
+    text-decoration: none;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border:none;
+    border-radius: 10px;
+    position: relative; } /* use this and top bottom left or right to position the tag */
+                        /* aㅜㅇ it floats when its in positioned */
+/*  relative - 내 원래 위치 기준
+    absolute - 부오태구 기준
+    fixed - 현재 화면 기준   */
+
+.footer {
+    width: 50%;
+    max-width: 500px;
+    height:200px;
+    background-color: white;;
+    position: relative;
+    top : -50px;
+    left : 50%;
+    right: 50%;
+    transform: translateX(-50%); 
+    border: 5px solid rgb(91, 91, 91);
+    border-radius: 20px;
+    z-index : 10;
+    box-sizing: border-box; 
+    /* border-sizing-은 width 기준점을 바꿔줌. */
+    padding: 20px;
+}
+.how {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:10px;
+}
+.make {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    color: black;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    word-spacing: 3px;
+
+}
+.userinfo {
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    word-spacing: 3px;
+    border: 2px solid rgb(91, 91, 91)
+}
+.login {
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    word-spacing: 3px;
+}
+.custom {
+    color: green;
+}
+.pseudo::after {
+    content: '';
+    color: seagreen;
+    font-size: 20px;
+}
+.input-file::file-selector-button {
+    background-color: skyblue;
+    border: 0;
+    padding: 20px;
+}
+.input-file::file-selector-button:hover {
+    background-color: rgb(200, 240, 255);
+    border: 0;
+    padding: 20px;
+}
+.yes-file[type=file]::-webkit-file-upload-button{ 
+    background-color: rgb(202, 141, 141);
+    border: none;
+}
+.yes-file{
+    display: none;
+}
+input[type=range] {
+    appearance: none;
+}
+input[type=range]::-webkit-slider-runnable-track{
+    background-color: rgb(0, 170, 255);
+}
+input[type=range]::-webkit-slider-thumb{
+    appearance: none;
+    background-color: rgb(170, 170, 170);
+    width:2rem;
+    height: 2rem;
+}
+progress{
+    appearance: none;
+}
+progress::-webkit-progress-bar {
+    appearance: none;
+    background-color: rgb(52, 148, 107);
+    border-radius: 10px;
+}
+progress::-webkit-progress-value {
+    appearance: none;
+    background-color: rgb(0, 170, 255);
+    border-radius: 10px;
+    border-top-right-radius: none;
+    border-bottom-right-radius: none;
+    
+}
+progress::-webkit-progress-inner-element {
+    appearance: none;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .main_title {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .how {
+        font-size: 15px;
+    }
+    .make {
+        font-size: 10px;
+    }
+}
